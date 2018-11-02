@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint app",
     "build": "webpack --mode production --config webpack.prod.js",
-    "dev": "webpack-dev-server --config webpack.dev.js --mode development",
+    "dev": "webpack-dev-server --config webpack.dev.js --host 192.168.8.100 --port 8080 --mode none",
     "test": "jest"
   },
   "author": "Chuck Bergeron",
@@ -109,7 +109,8 @@
     "tmp": "^0.0.33",
     "truffle-contract": "^3.0.5",
     "truffle-hdwallet-provider": "0.0.3",
-    "web3": "0.20.6",
+    "web3": "^0.20.6",
+    "web3-provider-engine": "^14.1.0",
     "web3-redux": "^0.5.2"
   }
 }
